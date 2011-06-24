@@ -5,8 +5,8 @@
 ##' \tabular{ll}{
 ##' Package: \tab jnt\cr
 ##' Type: \tab Package\cr
-##' Version: \tab 0.1-10\cr
-##' Date: \tab 2011-03-17\cr
+##' Version: \tab 0.1-11\cr
+##' Date: \tab 2011-06-23\cr
 ##' License: \tab GPL-2\cr
 ##' LazyLoad: \tab yes\cr
 ##' LazyData: \tab yes\cr
@@ -15,6 +15,10 @@
 ##' @name jnt-package
 ##' 
 ##' @docType package
+##'
+##' @export jnt
+##' @S3method print jnt
+##' @S3method plot jnt
 ##' 
 ##' @author Kevin Middleton (kmm@@csusb.edu)
 ##' 
