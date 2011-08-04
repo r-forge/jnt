@@ -5,8 +5,8 @@
 ##' \tabular{ll}{
 ##' Package: \tab jnt\cr
 ##' Type: \tab Package\cr
-##' Version: \tab 0.1-11\cr
-##' Date: \tab 2011-06-23\cr
+##' Version: \tab 0.1-13\cr
+##' Date: \tab 2011-08-04\cr
 ##' License: \tab GPL-2\cr
 ##' LazyLoad: \tab yes\cr
 ##' LazyData: \tab yes\cr
@@ -15,10 +15,6 @@
 ##' @name jnt-package
 ##' 
 ##' @docType package
-##'
-##' @export jnt
-##' @S3method print jnt
-##' @S3method plot jnt
 ##' 
 ##' @author Kevin Middleton (kmm@@csusb.edu)
 ##' 
@@ -65,44 +61,11 @@ NULL
 ##' 
 ##' @name Lavin.1
 ##'
+##' @aliases Lavin.1 Lavin.2
+##'
 ##' @docType data
 ##'
 ##' @format A data frame with 64 observations on the following 2 variables.
-##' \describe{
-##' \item{\code{V1}}{a numeric vector}
-##' \item{\code{V2}}{a numeric vector}
-##' }
-##'
-##' @references Lavin SR, Karasov WH, Ives AR, Middleton KM, Garland T, Jr (2008)
-##' Morphometrics of the avian small intestine compared with that of nonflying
-##' mammals: A phylogenetic approach. \emph{Physiol Biochem Zool} 81: 526-550.
-##'
-##' @keywords datasets
-##'
-##' @examples
-##' 
-##' str(Lavin.1)
-##' str(Lavin.2)
-##' 
-##' (Lavin <- jnt(Lavin.1, Lavin.2))
-##' plot(Lavin)
-##' 
-NULL
-
-
-
-
-
-##' Data from Lavin et al., 2008
-##' 
-##' Data set 2 from Lavin et al., 2008
-##' 
-##' 
-##' @name Lavin.2
-##' 
-##' @docType data
-##'
-##' @format A data frame with 220 observations on the following 2 variables.
 ##' \describe{
 ##' \item{\code{V1}}{a numeric vector}
 ##' \item{\code{V2}}{a numeric vector}
@@ -134,6 +97,8 @@ NULL
 ##' 
 ##' 
 ##' @name White.1
+##'
+##' @aliases White.1 White.2
 ##' 
 ##' @docType data
 ##'
@@ -160,39 +125,6 @@ NULL
 NULL
 
 
-
-
-
-##' Data from White, 2003
-##' 
-##' Data set 2 from from White, 2003
-##' 
-##' 
-##' @name White.2
-##'
-##' @docType data
-##'
-##' @format A data frame with 50 observations on the following 2 variables.
-##' \describe{
-##' \item{\code{V1}}{a numeric vector}
-##' \item{\code{V2}}{a numeric vector}
-##' }
-##'
-##' @references White CR (2003) Allometric analysis beyond heterogenous regression
-##' slopes: Use of the Johnson-Neyman Technique in comparative biology.
-##' \emph{Physiol Biochem Zool} 76: 135-140.
-##'
-##' @keywords datasets
-##'
-##' @examples
-##' 
-##' str(White.1)
-##' str(White.2)
-##' 
-##' (White <- jnt(White.1, White.2))
-##' plot(White)
-##' 
-NULL
 
 
 

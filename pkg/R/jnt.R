@@ -76,6 +76,9 @@
 ##' plot(jnt.out)
 ##' 
 ##' @export
+##' @S3method print jnt
+##' @S3method plot jnt
+
 
 jnt <- function(dat1, 
                 dat2 = NULL, 
@@ -162,4 +165,24 @@ jnt <- function(dat1,
                  "upper" = upper)
   class(jntobj) <- "jnt"
   jntobj                                # Return jntobj
+}
+
+
+print.jnt <- function(x, digits = 4, ...){
+  cat("\n")
+  cat("Johnson-Neyman Technique\n")
+  cat("\n")
+  cat("Alpha = ", x$alpha, "\n")
+  cat("\n")
+  cat("Set 1:\n")
+  cat("\tSlope\t\t", format(x$slope1, digits = digits), "\n")
+  cat("\tIntercept\t", format(x$int1, digits = digits), "\n")
+  cat("\n")
+  cat("Set 2:\n")
+  cat("\tSlope\t\t", format(x$slope2, digits = digits), "\n")
+  cat("\tIntercept\t", format(x$int2, digits = digits), "\n")
+  cat("\n")
+  cat("Region of non-significant slope difference\n")
+  cat("\tLower\t\tUpper\n")
+  cat("\t", format(x$lower, digits = digits), "\t", format(x$upper, digits = digits), "\n\n")
 }
